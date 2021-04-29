@@ -7,11 +7,16 @@ version '1.0-SNAPSHOT'
 
 repositories {
     mavenCentral()
+    jcenter()
+    maven { url 'https://jitpack.io' }
 }
 
 dependencies {
     testImplementation 'org.junit.jupiter:junit-jupiter-api:5.7.0'
     testRuntimeOnly 'org.junit.jupiter:junit-jupiter-engine:5.7.0'
+
+    implementation group: 'com.github.PanamaHitek', name: 'PanamaHitek_Arduino', version: '3.2.0'
+
 }
 
 test {
